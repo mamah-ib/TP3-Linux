@@ -1,0 +1,27 @@
+Script started on 2026-07-08 20:43:55+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="172" LINES="41"]
+[?2004h]0;atighleckbeid@DESKTOP-C9T6CO2: ~/TP3-Linux/exercice1[01;32matighleckbeid@DESKTOP-C9T6CO2[00m:[01;34m~/TP3-Linux/exercice1[00m$ wsl.exe -l -v
+[?2004l[6n[m]0;C:\WINDOWS\system32\wsl.exe[?25h  NAME              STATE           VERSION
+* Ubuntu            Running         2
+  docker-desktop    Stopped         2
+  kali-linux        Installing      2
+  Ubuntu-24.04      Stopped         2
+  Ubuntu-20.04[2C    Stopped         2
+[?2004h]0;atighleckbeid@DESKTOP-C9T6CO2: ~/TP3-Linux/exercice1[01;32matighleckbeid@DESKTOP-C9T6CO2[00m:[01;34m~/TP3-Linux/exercice1[00m$ wsl.exe l[K6[K-l è[K7[K_[K-v
+[?2004l[6n[m]0;C:\WINDOWS\system32\wsl.exe[?25h  NAME              STATE           VERSION
+* Ubuntu            Running         2
+  docker-desktop    Stopped[4C     2
+  kali-linux        Installing      2
+  Ubuntu-24.04      Stopped         2
+  Ubuntu-20.04      Stopped[6C   2
+[?2004h]0;atighleckbeid@DESKTOP-C9T6CO2: ~/TP3-Linux/exercice1[01;32matighleckbeid@DESKTOP-C9T6CO2[00m:[01;34m~/TP3-Linux/exercice1[00m$ lsv[Kb_release -a
+[?2004lNo LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 24.04.4 LTS
+Release:	24.04
+Codename:	noble
+[?2004h]0;atighleckbeid@DESKTOP-C9T6CO2: ~/TP3-Linux/exercice1[01;32matighleckbeid@DESKTOP-C9T6CO2[00m:[01;34m~/TP3-Linux/exercice1[00m$ uname -r
+[?2004l6.18.33.2-microsoft-standard-WSL2
+[?2004h]0;atighleckbeid@DESKTOP-C9T6CO2: ~/TP3-Linux/exercice1[01;32matighleckbeid@DESKTOP-C9T6CO2[00m:[01;34m~/TP3-Linux/exercice1[00m$ exit
+[?2004lexit
+
+Script done on 2026-07-08 20:48:37+01:00 [COMMAND_EXIT_CODE="0"]
