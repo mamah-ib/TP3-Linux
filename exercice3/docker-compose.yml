@@ -1,0 +1,35 @@
+services:
+  debian:
+    image: debian:latest
+    tty: true
+    stdin_open: true
+
+  ubuntu:
+    image: ubuntu:latest
+    tty: true
+    stdin_open: true
+
+  fedora:
+    image: fedora:latest
+    tty: true
+    stdin_open: true
+
+  alpine:
+    image: alpine:latest
+    tty: true
+    stdin_open: true
+
+  kali:
+    image: kalilinux/kali-rolling
+    tty: true
+    stdin_open: true
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass123
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
