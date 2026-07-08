@@ -1,0 +1,65 @@
+Script started on 2026-07-08 22:01:14+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="172" LINES="41"]
+[?2004h]0;atighleckbeid@DESKTOP-C9T6CO2: ~/TP3-Linux/exercice4[01;32matighleckbeid@DESKTOP-C9T6CO2[00m:[01;34m~/TP3-Linux/exercice4[00m$ doke[K[Kcker ps
+[?2004lCONTAINER ID   IMAGE                    COMMAND                  CREATED         STATUS         PORTS                 NAMES
+6ba2670b7e0a   mysql:8.0                "docker-entrypoint.s…"   7 minutes ago   Up 7 minutes   3306/tcp, 33060/tcp   exercice3_mysql_1
+64468572aaf8   alpine:latest            "/bin/sh"                7 minutes ago   Up 7 minutes                         exercice3_alpine_1
+5b6d53018a11   debian:latest            "bash"                   7 minutes ago   Up 7 minutes                         exercice3_debian_1
+035488b43852   ubuntu:latest            "/bin/bash"              7 minutes ago   Up 7 minutes                         exercice3_ubuntu_1
+c08ead4766c4   fedora:latest            "/bin/bash"              7 minutes ago   Up 7 minutes                         exercice3_fedora_1
+2d7ea197d896   kalilinux/kali-rolling   "bash"                   7 minutes ago   Up 7 minutes                         exercice3_kali_1
+[?2004h]0;atighleckbeid@DESKTOP-C9T6CO2: ~/TP3-Linux/exercice4[01;32matighleckbeid@DESKTOP-C9T6CO2[00m:[01;34m~/TP3-Linux/exercice4[00m$ docker exec -it exercice3_mysql_1 mysql -u root -p
+[?2004lEnter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.46 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2026, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> CREATE DATABASE ecole;[29G[K.[29G[K/[29G[K;
+Query OK, 1 row affected (0.03 sec)
+
+mysql> USE ecole;
+Database changed
+mysql> CREATE TABLE Etudiants (id INT AUTO_INCREMENT PRIMARY KEY, nom VARCHAR(50), prenom VARCHAR(50));
+Query OK, 0 rows affected (0.10 sec)
+
+mysql> INSERT INTO Etudiants (nom, prenom) VALUES ('Diallo', 'Moussa'), ('Fall', 'Fatou');
+Query OK, 2 rows affected (0.05 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+mysql> SELECT * FROM Etudiants;
++----+--------+--------+
+| id | nom    | prenom |
++----+--------+--------+
+|  1 | Diallo | Moussa |
+|  2 | Fall   | Fatou  |
++----+--------+--------+
+2 rows in set (0.00 sec)
+
+mysql> UPDATE Etudiants SET nom = 'Traor' WHERE id = 1;
+Query OK, 1 row affected (0.05 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> DELETE FROM Etudiants WHERE id = 2;
+Query OK, 1 row affected (0.05 sec)
+
+mysql> SELECT * FROM Etudiants;
++----+-------+--------+
+| id | nom   | prenom |
++----+-------+--------+
+|  1 | Traor | Moussa |
++----+-------+--------+
+1 row in set (0.00 sec)
+
+mysql> E[8G[Kexir[11G[Kt;
+Bye
+[?2004h]0;atighleckbeid@DESKTOP-C9T6CO2: ~/TP3-Linux/exercice4[01;32matighleckbeid@DESKTOP-C9T6CO2[00m:[01;34m~/TP3-Linux/exercice4[00m$ exit
+[?2004lexit
+
+Script done on 2026-07-08 23:46:55+01:00 [COMMAND_EXIT_CODE="0"]
